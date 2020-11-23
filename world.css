@@ -1,1 +1,72 @@
 /* Add your own styles */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Taviraj');
+
+header{
+    text-align: center;
+    vertical-align: middle;
+    background-color: darkblue;
+}
+
+body{
+    background-color: gainsboro ;
+}
+
+h1 {
+    font-family: Taviraj, Georgia, serif;
+    display: inline-block;
+    color: black;
+}
+
+#world-img {
+    width: 170px;
+    height: 150px;
+    border-radius: 70%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 15px;
+  /*border-spacing: 5px;*/
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 20px auto;
+}
+
+td {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    background-color: lightseagreen;
+    color: white;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10%;
+    
+}
+
+
+/* th,
+td {
+  padding: 10px 15px;
+}
+
+thead {
+  background: #395870;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+
+td:first-child {
+  border-left: 1px solid #cecfd5;
+} */
+
