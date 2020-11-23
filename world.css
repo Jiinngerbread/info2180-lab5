@@ -2,14 +2,21 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Roboto|Taviraj'); */
 
-header{
+/* header{
     text-align: center;
     vertical-align: middle;
     background-color: darkblue;
+} */
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#395870;
 }
 
 body{
-    background-color: gainsboro ;
+   background-color: gainsboro ;
 }
 
 h1 {
@@ -19,38 +26,55 @@ h1 {
 }
 
 #world-img {
-    width: 170px;
-    height: 150px;
-    border-radius: 70%;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f0f0f2;
+  margin-top: 10px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px ;
+  align-items: center;
+  gap: 10px;
+  
 }
 
 table {
   border-collapse: separate;
-  border-spacing: 15px;
+  border-spacing: 0px;
   /*border-spacing: 5px;*/
   font-family: Roboto, Helvetica, Arial, sans-serif;
   margin: 20px auto;
+  border: 1px solid black;
 }
 
 td {
-    text-align: center;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 1px solid black;
 }
 
 button {
-    display: inline-block;
-    background-color: lightseagreen;
-    color: white;
-    padding: 5px;
-    height: 50px;
-    border-radius: 10%;
-    
+  display: inline-block;
+  background-color: lightseagreen;
+  color: white;
+  padding: 5px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+input {
+  height: 50px;
+  width: 500px;
 }
 
 
-/* th,
-td {
-  padding: 10px 15px;
-}
 
 thead {
   background: #395870;
@@ -68,5 +92,5 @@ td {
 
 td:first-child {
   border-left: 1px solid #cecfd5;
-} */
+}  
 
