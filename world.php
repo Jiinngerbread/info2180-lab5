@@ -40,8 +40,9 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
         <?php endforeach; ?>
         </ul>
     <?php } else { 
-      $stmt = $conn->query("SELECT cities.name, cities.district, cities.population FROM cities join countries ON cities.country_code = countries.code WHERE countries.name LIKE '%$country%' ORDER BY countries.name ASC");
-      $results = $stmt->fetchall(PDO::FETCH_ASSOC);
+      $country = filter_var($_GET['country'], FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_NO_ENCODE_QUOTES);
+      $stmt = $conn->query("SELECT cities.name, cities.district,cities.population from cities join countries on cities.country_code = countries.code where countries.name like '%$country%'");
+      $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
       ?>
         <table>
           <thead>
